@@ -222,6 +222,15 @@ pub static PYTHON_DISTRIBUTIONS: Lazy<PythonDistributionCollection> = Lazy::new(
             target_triple: "x86_64-pc-windows-msvc".to_string(),
             supports_prebuilt_extension_modules: true,
         },
+        PythonDistributionRecord {
+            python_major_minor_version: "3.11".to_string(),
+            location: PythonDistributionLocation::Url {
+                url: "https://github.com/astral-sh/python-build-standalone/releases/download/20250317/cpython-3.11.11+20250317-x86_64-pc-windows-msvc-pgo-full.tar.zst".to_string(),
+                sha256: "2cfac0dec4d2ffdd603b5f51b4959ce0fd5b2b0da6504ba9ee62ff2c8ab712b9".to_string(),
+            },
+            target_triple: "x86_64-pc-windows-msvc".to_string(),
+            supports_prebuilt_extension_modules: true,
+        },
 
         // Windows static.
         PythonDistributionRecord {
